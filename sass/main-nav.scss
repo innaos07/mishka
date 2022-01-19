@@ -1,0 +1,16 @@
+@import 'variables';
+
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-list__link,
+.user-list__link {
+    display: block;
+    font-size: $body-font-size + 2px;
+    line-height: $body-line-height + 10px;
+    color: $body-color;
+    font-weight: 700;
+}
