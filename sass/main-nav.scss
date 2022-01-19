@@ -9,8 +9,22 @@
 .site-list__link,
 .user-list__link {
     display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 45px;
+    border-bottom: $border-bottom;
     font-size: $body-font-size + 2px;
     line-height: $body-line-height + 10px;
     color: $body-color;
     font-weight: 700;
+
+    &:hover,
+    &:focus {
+        color: rgba(0, 0, 0, 0.6);
+        }
+
+    &:active {
+        color: rgba(0, 0, 0, 0.3);
+        }
 }
+

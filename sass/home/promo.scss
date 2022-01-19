@@ -1,0 +1,43 @@
+@import '../variables';
+
+.promo__title {
+    margin: 0;
+    margin-top: 75px;
+    padding: 0;
+    padding-bottom: 120px;
+    
+    font-size: 27px;
+    line-height: $body-line-height + 10px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.promo__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+}
+
+.promo__link {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+
+    font-size: $body-font-size + 4px;
+    line-height: $body-line-height + 4px;
+    font-weight: 700;
+    color: #ffffff;
+
+    &:active {
+        color: rgba(255, 255, 255, 0.3 );
+    }
+}
+
+.promo__link--subject {
+    background-color: #63d1bb; 
+}
+
+.promo__link--toys {
+    background-color: #56c3b2;
+}

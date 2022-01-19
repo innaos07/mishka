@@ -25,3 +25,38 @@ body {
 a {
     text-decoration: none;
 }
+
+.btn {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+    border: 3px solid #444444;
+    font: inherit;
+    font-size: 18px;
+    font-weight: 700;
+    
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: $text-color;
+    background-color: #ffffff;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-background-color;
+            color: rgb(255, 255, 255);
+            transition: all 0.5s;
+        }
+        &:active  {
+            background-color: $btn-background-color;
+            color: rgba(255, 255, 255, 0.3);
+            transition: all 0.5s;
+        }
+}
+
+
+
+
+
+
