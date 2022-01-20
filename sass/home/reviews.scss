@@ -1,8 +1,13 @@
 @import '../variables';
 
+.reviews {
+   padding-top: 30px;
+   padding-bottom: 45px;
+}
+
 .revievs__title {
     margin: 0;
-    margin-top: 30px;
+    margin-bottom: 30px;
     padding: 0;
     font-size: $title-font-size;
     line-height: $title-line-height;
@@ -27,5 +32,34 @@
 
 .reviews__author-email {
    margin: 0;
-   padding: 0;
+   padding: 0; 
 }
+
+.reviews__btn {
+   margin-bottom: 40px;
+}
+
+.slider__btn{
+   display: inline-block;
+   box-sizing: border-box;
+   padding-top: 13px;
+   padding-bottom: 13px;
+   padding-left: 40px;
+   padding-right: 40px;
+   width: 130px;
+
+   text-align: center;
+   vertical-align: middle;
+   background-color: #ffffff;
+   border: $grey-border;
+}
+
+.slider__btn--left {
+   margin-right: -6px;
+}
+
+.reviews__write {
+   padding-left: 80px;
+   padding-right: 80px;
+}
+

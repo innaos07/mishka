@@ -1,0 +1,53 @@
+@import 'variables';
+
+.modal-size__wrapper {
+    background-color: #fff;
+    padding-top: 35px;
+    padding-bottom: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.modal-size__title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.modal-size__text {
+    margin: 0;
+    padding: 0;
+    color: $text-color;
+}
+
+.modal-size__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+// .modal-size__indicator {
+    
+// }
+
+.modal-size_btn {
+    box-sizing: border-box;
+    width: 260px;
+    padding-right: 80px;
+    padding-left: 80px;
+    background-color: $green-color; 
+    border-color: $green-color;
+    color: #fff;
+
+        &:hover,
+        &:focus {
+            background-color: $dark-green-color; 
+            border-color: $dark-green-color;
+        } 
+
+        &:active {
+            background-color: $dark-green-color; 
+            border-color: $dark-green-color;
+            color: rgba(255, 255, 255, 0.3);
+        } 
+}
