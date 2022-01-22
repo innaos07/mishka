@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 320px;
+    
     font-family: "Open Sans", Arial, sans-sarif;
     font-size: $body-font-size;
     line-height: $body-line-height;
@@ -12,12 +12,14 @@ body {
 }
 
 .container {
-    width: 320px;
+    width: 100%;
+    min-width: 320px;
     margin: 0 auto;
     background-color: #ffffff;
 
     @media (min-width: $tablet-width) {
         width: 768px;
+        
     }
 
      @media (min-width: $desktop-width) {
