@@ -1,9 +1,97 @@
 @import 'variables';
+.main-nav {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+        
+        flex-direction: row;
+        width: 668px;
+    }
+}
+
+.main-nav--open {
+    display: block;
+}
+
+.main-nav__toggle {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+
+    @media (min-width: $tablet-width) {
+        visibility: hidden;    
+    }
+}
+
+.main-nav__icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $body-color;  
+
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: $body-color; 
+        }
+
+        &::before {
+            transform: translate(0, -5px);
+        }
+
+        &::after {
+            transform: translate(0, 3px);
+        }
+}
+
+.main-nav__icon--open {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $body-color;
+    transform: rotate(45deg); 
+
+        &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: $body-color; 
+            transform: rotate(90deg);
+        }
+
+}
 
 .main-nav__list {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.user-list {
+    @media (min-width: $tablet-width) {
+        display: flex;
+        width: 350px;
+        margin-left: auto;
+    }
+}
+
+.user-list__item--search {
+    @media (min-width: $tablet-width) {
+        width: 85px;
+        border-left: $grey-border;
+        border-right: $grey-border;
+    }
+}
+
+.user-list__item--backetcc{
+        @media (min-width: $tablet-width) {
+        width: 265px;
+    }
 }
 
 .site-list__link,
@@ -26,5 +114,16 @@
     &:active {
         color: rgba(0, 0, 0, 0.3);
         }
+
+      @media (min-width: $tablet-width) {
+        border-bottom: none;
+      }
 }
+
+.user-list__link--search {
+    @media (min-width: $tablet-width) {
+        font-size: 0;
+    }
+}
+
 
