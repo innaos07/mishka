@@ -8,7 +8,21 @@
     }
 
     @media (min-width: $desktop-width) { 
-        width: 1150px;
+        
+    }
+}
+
+.main-nav--left {
+
+    @media (min-width: $desktop-width) { 
+      order: 3;  
+    }
+}
+
+.main-nav--right {
+
+    @media (min-width: $desktop-width) { 
+      order: 1;  
     }
 }
 
@@ -86,6 +100,7 @@
         width: 466px;
         margin-left: auto;
         align-items: center;
+        margin-right: 30px;
     }
 }
 
@@ -115,6 +130,7 @@
     @media (min-width: $desktop-width){
         align-items: center;
         margin-left: auto;
+        width: 400px;
     }
 }
 
@@ -125,6 +141,7 @@
         border-left: $grey-border;
         border-right: $grey-border;
     }
+
 }
 
 .user-list__item--backet {
