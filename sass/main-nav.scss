@@ -3,10 +3,12 @@
     display: flex;
     flex-direction: column;
 
-    @media (min-width: $tablet-width) {
-        
+    @media (min-width: $tablet-width) { 
         flex-direction: row;
-        width: 668px;
+    }
+
+    @media (min-width: $desktop-width) { 
+        width: 1150px;
     }
 }
 
@@ -20,7 +22,7 @@
     right: 30px;
 
     @media (min-width: $tablet-width) {
-        visibility: hidden;    
+        display: none;   
     }
 }
 
@@ -72,15 +74,52 @@
     list-style: none;
 }
 
+.site-list { 
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    } 
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        flex-direction: row;
+        width: 466px;
+        margin-left: auto;
+        align-items: center;
+    }
+}
+
+.site-list__item {
+
+    @media (min-width: $desktop-width) {
+        width: 233px;
+    }
+}
+
+.site-list__item--desktop {
+
+    @media (min-width: $desktop-width) {
+        border-right: $grey-border;
+    }
+}
+
 .user-list {
+
     @media (min-width: $tablet-width) {
         display: flex;
         width: 350px;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    @media (min-width: $desktop-width){
+        align-items: center;
         margin-left: auto;
     }
 }
 
 .user-list__item--search {
+
     @media (min-width: $tablet-width) {
         width: 85px;
         border-left: $grey-border;
@@ -88,9 +127,14 @@
     }
 }
 
-.user-list__item--backetcc{
-        @media (min-width: $tablet-width) {
+.user-list__item--backet {
+
+     @media (min-width: $tablet-width) {
         width: 265px;
+    }
+
+    @media (min-width: $desktop-width){ 
+        width: 330px;
     }
 }
 
@@ -109,16 +153,22 @@
     &:hover,
     &:focus {
         color: rgba(0, 0, 0, 0.6);
-        }
+    }
 
     &:active {
         color: rgba(0, 0, 0, 0.3);
-        }
+    }
 
-      @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
         border-bottom: none;
-      }
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-top: 37px;
+        padding-bottom: 37px;
+    }
 }
+
 
 .user-list__link--search {
     @media (min-width: $tablet-width) {
