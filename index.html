@@ -68,13 +68,19 @@
             <div class="promo__wrapper">
                 <h2 class="visually-hidden">Mishka</h2> 
                 <ul class="promo-nav__list">
-                        <li class="promo-nav__item">
+                        <li class="promo-nav__item promo-nav__item--tab-hidden">
                             <a class="promo-nav__link" href="catalog.html">Каталог товаров</a>
                         </li>
-                        <li class="promo-nav__item">
+                        <li class="promo-nav__item promo-nav__item--tab-hidden">
                             <a class="promo-nav__link" href="form.html">Вязание на заказ</a>
                         </li>
-                          <li class="promo-nav__item promo-nav__item--delivery"> Бесплатная доставка по России
+                         <li class="promo-nav__item promo-nav__item--hidden">
+                            <a class="promo-nav__link" href="catalog.html">Новые поступления</a>
+                        </li>
+                        <li class="promo-nav__item promo-nav__item--hidden">
+                            <a class="promo-nav__link" href="form.html">Распродажа</a>
+                        </li>
+                        <li class="promo-nav__item promo-nav__item--delivery"> Бесплатная доставка по России
                         </li>
                 </ul>
                 <p class="promo__title">Милые штуки ручной работы для дома</p>
@@ -92,28 +98,38 @@
         </section>
 
         <article class="popular">
-            <h2 class="popular__title">Вязаные корзинки</h2>
-            <span class="popular__sub">ТОВАР НЕДЕЛИ</span>
-            <p class="popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-            
-            <table class="promo__table">
-                <tr>
-                    <td class="popular__item popular__item--name">Цвет:</td>
-                    <td class="popular__item popular__item--value">«Тиффани»/серый</td>
-                </tr>
-                <tr>
-                    <td class="popular__item popular__item--name">Диаметр:</td>
-                    <td class="popular__item popular__item--value">25 см</td>
-                </tr>
-                <tr>
-                    <td class="popular__item popular__item--name">Высота</td>
-                    <td class="popular__item popular__item--value">15 см</td>
-                </tr>
-            </table>
 
-            <img class="popular__image" src="img/popular-product.jpg" width="260" height="315" alt="">
-            <span class="popular__price">Цена: 990 руб.</span>
-            <button class="btn popular__btn" type="button">ЗАКАЗАТЬ</button>
+            <div class="popular__wrapper--top">
+                <h2 class="popular__title">Вязаные корзинки</h2>
+                <span class="popular__sub">ТОВАР НЕДЕЛИ</span>
+            </div>
+
+            <div class="popular__content-wrapper">
+                <div class="popular__content-wrapper--left">
+                    <p class="popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                    <table class="promo__table">
+                        <tr>
+                            <td class="popular__item popular__item--name">Цвет:</td>
+                            <td class="popular__item popular__item--value">«Тиффани»/серый</td>
+                        </tr>
+                        <tr>
+                            <td class="popular__item popular__item--name">Диаметр:</td>
+                            <td class="popular__item popular__item--value">25 см</td>
+                        </tr>
+                        <tr>
+                            <td class="popular__item popular__item--name">Высота</td>
+                            <td class="popular__item popular__item--value">15 см</td>
+                        </tr>
+                    </table>
+                    
+                    <span class="popular__price">Цена: 990 руб.</span>
+                    <button class="btn popular__btn" type="button">ЗАКАЗАТЬ</button>
+                </div>
+                
+                <div class="popular__content-wrapper--right">
+                    <img class="popular__image" src="img/popular-product.jpg" width="260" height="315" alt="">     
+                </div>
+            </div>
         </article>
         
         <section class="feature">
