@@ -1,6 +1,36 @@
 @import '../variables';
 
+.feature {
+    padding-left: 10%;
+    padding-right: 10%;
 
+    @media (min-width: $tablet-width) {
+        padding-top: 55px;
+        padding-bottom: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-left: 275px;
+        padding-right: 275px;
+        padding-top: 60px;
+        padding-bottom: 45px;
+    }
+}
+
+.feature__wrapper {
+
+    @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-between;
+        width: 668; 
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 700px;
+    }
+}
 
 .feature__title {
     margin: 0;
@@ -9,6 +39,17 @@
     font-size: $title-font-size;
     line-height: $title-line-height;
     font-weight: 700;
+
+    @media (min-width: $tablet-width) {
+        font-size: $title-tab-font-size;
+        line-height: $title-tab-line-height;
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: $title-desk-font-size;
+        line-height: $title-desk-line-height;
+    }
 }
 
 .feature__list {
@@ -18,8 +59,65 @@
 }
 
 .feature__item {
+    position: relative;
     padding-top: 55px;
-    padding-bottom: 30px;
-    font-size: $body-font-size + 2px;
+    margin-bottom: 30px;
+    font-size: 17px;
     font-weight: 700;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 50px;
+        // background-color: rgba(241, 241, 241, 0.8);
+        
+    }
+
+    @media (min-width: $tablet-width) {
+        width: 334px;
+        margin-bottom: 55px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 350px;
+    }
+}
+
+.feature__item--natural {
+    background-image: url('../img/feature-icon-1.png');
+    background-repeat: no-repeat;
+    background-position: 8px 0;
+}
+
+.feature__item--money {
+    background-image: url('../img/feature-icon-3.png');
+    background-repeat: no-repeat;
+}
+
+.feature__item--heart {
+    background-image: url('../img/feature-icon-5.png');
+    background-repeat: no-repeat;
+    background-position: 6px 0;
+}
+
+.feature__item--clew {
+    background-image: url('../img/feature-icon-2.png');
+    background-repeat: no-repeat;
+    background-position: 6px 0;
+}
+
+.feature__item--rocket {
+    background-image: url('../img/feature-icon-4.png');
+    background-repeat: no-repeat;
+}
+
+.feature__item--present {
+    background-image: url('../img/feature-icon-6.png');
+    background-repeat: no-repeat;
+    background-position: 6px 0;
 }

@@ -176,10 +176,10 @@
     position: absolute;
     top: -462px;
     left: 0;
-    width: 100%;
-    height: auto;
+    width: 260px;
     height: 315px;
     margin-bottom: 30px;
+    
 
     @media (min-width: $tablet-width) {
         position: relative;
@@ -187,6 +187,7 @@
         left: auto;
         width: 333px;
         height: 404px;
+        margin-bottom: 0;
         }
 
     @media (min-width: $desktop-width) {
