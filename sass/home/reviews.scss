@@ -7,9 +7,10 @@
    padding-bottom: 45px;
    padding-left: 10%;
    padding-right: 10%;
+   position: relative;
 
    @media (min-width: $tablet-width) {
-      position: relative;
+      
       display: flex; 
       flex-direction: row;  
       flex-wrap: wrap;   
@@ -27,7 +28,31 @@
       padding-left: 275px;
       padding-top: 80px;
       padding-bottom: 170px;
+      background-position: 100px 0;
   
+   }
+
+   &::before {
+      content: "";
+      position: absolute;
+      height: 10px;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background-image: url('../img/zigzag-grey-mobile.png');
+      background-repeat: repeat-x;
+     
+        
+         @media (min-width: $tablet-width) {
+            background-image: url('../img/zigzag-grey.png');
+            height: 23px;
+         }
+        
+        @media (min-width: $desktop-width) {
+            width: 1050px;
+            left: 100px;
+            height: 23px; 
+        }
    }
 }
 
@@ -218,7 +243,7 @@
 
    &::before,
    &::after {
-      left: 36px;
+      left: 31px;
    }
 
    &::before {

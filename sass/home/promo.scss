@@ -6,6 +6,7 @@
         box-sizing: border-box;
         padding: 0 50px;
         background-color: #f9f9f9;
+        position: relative;
 
     }   
 
@@ -20,16 +21,17 @@
             content: "";
             z-index: 2;
             position: absolute;
-            top: 765px;
+            top: 669px;
             left: 0;
 
             width: 100%;
             height: 10px;
             background-image:   url('../img/zigzag.png');
+           
         }
 
         @media (min-width: $desktop-width) {
-            top: 804px;
+            top: 690px;
         }
     }
 }
