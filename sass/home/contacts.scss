@@ -42,7 +42,16 @@
         position: relative;      
     }
 
-       &::before {
+    @media (min-width: $desktop-width) {
+       width: 310px;
+       margin-right: 40px;
+       margin-top: 75px;  
+   }
+
+
+    &::before {
+
+        @media (min-width: $tablet-width) {
         content: "";
         position: absolute;
         top: -15px;
@@ -52,24 +61,14 @@
         // background-color: rgba(241, 241, 241, 0.8);
         background-image: url('../img/contacts-flag.png');
         background-repeat: no-repeat;
-        background-position: 6px 8px;    
+        background-position: 6px 8px;  
+        }  
 
         @media (min-width: $desktop-width) {
             top: -20px;
             left: -115px;
         }
     } 
-
-    @media (min-width: $desktop-width) {
-       width: 310px;
-       margin-right: 40px;
-       margin-top: 75px;  
-   }
-
-
-
-
-
 }
 
 .contacts__title {
