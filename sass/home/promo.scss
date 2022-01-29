@@ -14,26 +14,24 @@
         padding: 0 100px;
     }
 
-    &::before {
-        
+        &::before {
 
-        @media (min-width:$tablet-width) {
-            content: "";
-            z-index: 2;
-            position: absolute;
-            top: 669px;
-            left: 0;
+            @media (min-width:$tablet-width) {
+                content: "";
+                z-index: 2;
+                position: absolute;
+                top: 670px;
+                left: 0;
 
-            width: 100%;
-            height: 10px;
-            background-image:   url('../img/zigzag.png');
-           
+                width: 100%;
+                height: 10px;
+                background-image:  url('../img/zigzag.png');  
+            }
+
+            @media (min-width: $desktop-width) {
+                top: 691px;
+            }
         }
-
-        @media (min-width: $desktop-width) {
-            top: 690px;
-        }
-    }
 }
 
 .promo__wrapper  {
@@ -110,21 +108,20 @@
 
      @media (min-width: $desktop-width) {
         width: 1050px;
-       
     }
 }
 
 .promo-nav__item--tab-hidden {
+
      @media (min-width: $desktop-width) {
-        display: none;
-       
+        display: none;    
     }
 }
 
 .promo-nav__item--hidden {
+
      @media (min-width: $tablet-width) {
         display: none;
-       
     }
 
     @media (min-width: $desktop-width) {
@@ -162,9 +159,8 @@
         }
     }
 
-     @media (min-width: $desktop-width) {
-        width: 183px;
-       
+    @media (min-width: $desktop-width) {
+        width: 183px; 
     }
 }
 
@@ -180,29 +176,31 @@
     }
 
     @media (min-width: $desktop-width) {
-        width: 1050px;
-       
+        width: 1050px;    
     }
-
 }
 
 .promo__link {
+    position: relative;
     display: block;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
-
+    padding-right: 160px;
     font-size: 19px;
     line-height: 24px;
     font-weight: 700;
     color: #ffffff;
 
-    &:active {
-        color: rgba(255, 255, 255, 0.3 );
-    }
+        &:active {
+            color: rgba(255, 255, 255, 0.3 );
+        }
 
     @media (min-width: $tablet-width) {
-        box-sizing: border-box;
+        
         height: 120px;
         width: 334px;
         padding-left: 35px;
@@ -214,8 +212,39 @@
 
     @media (min-width: $desktop-width) {
         width: 525px;
-        padding-right: 368px;
-       
+        padding-right: 368px;      
+    }
+}
+
+.promo__link--subject {
+   
+    &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 70px;
+        height: 70px;
+        
+        background-image: url('../img/promo-interior.png');
+        background-position: 50%;
+        background-repeat: no-repeat;
+    }
+}
+
+.promo__link--toys {
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 70px;
+        height: 70px;
+        
+        background-image: url('../img/promo-toy.png');
+        background-position: 50%;
+        background-repeat: no-repeat;
     }
 }
 

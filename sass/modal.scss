@@ -1,6 +1,16 @@
 @import 'variables';
 
+// .modal-size {
+//     display: flex;
+//     flex-direction: column;
+
+    
+
+// }
+
 .modal-size__wrapper {
+    width: 320px;
+    box-sizing: border-box;
     background-color: #fff;
     padding-top: 35px;
     padding-bottom: 50px;
@@ -23,14 +33,14 @@
 .modal-size__list {
     margin: 0;
     padding: 0;
+    margin-bottom: 30px;
     list-style: none;
+    display: flex;
 }
 
-// .modal-size__indicator {
-    
-// }
+.modal-size_
 
-.modal-size_btn {
+.modal-size__btn {
     box-sizing: border-box;
     width: 260px;
     padding-right: 80px;

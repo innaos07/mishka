@@ -1,14 +1,11 @@
  @import 'variables';
+
 .main-nav {
     display: flex;
     flex-direction: column;
 
     @media (min-width: $tablet-width) { 
         flex-direction: row;
-    }
-
-    @media (min-width: $desktop-width) { 
-        
     }
 }
 
@@ -137,11 +134,8 @@
 .user-list__item--search {
 
     @media (min-width: $tablet-width) {
-        width: 85px;
-        border-left: $grey-border;
-        border-right: $grey-border;
+         width: 85px;
     }
-
 }
 
 .user-list__item--backet {
@@ -167,35 +161,83 @@
     color: $body-color;
     font-weight: 700;
 
-    &:hover,
-    &:focus {
-        color: rgba(0, 0, 0, 0.6);
-    }
+        &:hover,
+        &:focus {
+            color: rgba(0, 0, 0, 0.6);
+        }
 
-    &:active {
-        color: rgba(0, 0, 0, 0.3);
-    }
+        &:active {
+            color: rgba(0, 0, 0, 0.3);
+        }
 
     @media (min-width: $tablet-width) {
         border-bottom: none;
     }
 
     @media (min-width: $desktop-width) {
-        padding-top: 37px;
-        padding-bottom: 37px;
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
 }
 
 .site-list__link {
+
      @media (min-width: $desktop-width) {
         padding-left: 50px;
     }
 }
 
 .user-list__link--search {
+    position: relative;
+
     @media (min-width: $tablet-width) {
+        display: block;
+        padding-left: 0;
+        box-sizing: border-box;
         font-size: 0;
+        
+        border-left: $grey-border;
+        border-right: $grey-border;
     }
 }
 
+.user-list__search {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+
+    @media (min-width: $tablet-width) {
+        top: 37px;
+        left: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+        top: 41px;
+        left: 33px;
+    }
+}
+
+.user-list__link--backet {
+    position: relative;
+
+     @media (min-width: $tablet-width) {
+        padding-left: 75px;
+    }
+}
+
+.user-list__basket {
+    position: absolute;
+    top: 32px;
+    left: 15px;
+
+    @media (min-width: $tablet-width) {
+        top: 32px;
+        left: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+        top: 37px;
+        left: 28px;
+    }
+}
 
