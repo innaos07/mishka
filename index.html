@@ -254,33 +254,31 @@
         </div>
     </footer>
 
-    <section class="modal modal-size">
-        <div class="container">
+    <section class="modal modal-size modal-overlay">
+        
             <div class="modal-size__wrapper">
-                <h2 class="modal-size__title">Добавить в корзину</h2>
+                <h2 class="modal-size__title">Добавить в корзину </h2>
                 <p class="modal-size__text">Выберите размер:</p>
+
                 <form class="modal-size__form" action="https://echo.htmlacademy.ru" metod="post">
                     <ul class="modal-size__list">
                         <li class="modal-size__option">
-                            <input type="radio" name="size" id="size-s" value="s">
-                            
-                            <span class="modal-size__indicator">S</span>
+                            <input class="visually-hidden" type="radio" name="size" id="size-s" value="s">
+                            <label  for="size-s" class="modal-size__indicator">S</label>
                         </li>
                          <li class="modal-size__option">
-                            <input type="radio" name="size" id="size-m" value="m">
-                            
-                            <span class="modal-size__indicator">M</span>
+                            <input class="visually-hidden" type="radio" name="size" id="size-m" value="m">
+                            <label for="size-m" class="modal-size__indicator">M</label>
                         </li>
                          <li class="modal-size__option">
-                            <input type="radio" name="size" id="size-l" value="l">
-                            
-                            <span class="modal-size__indicator">L</span>
+                            <input class="visually-hidden" type="radio" name="size" id="size-l" value="l">
+                            <label for="size-l" class="modal-size__indicator">L</label>
                         </li>
                     </ul>
                     <button class="btn modal-size__btn" type="submit">Добавить</button>
-                </form>
+                </form> 
             </div>
-        </div>
+        
     </section>
 
     <script> 

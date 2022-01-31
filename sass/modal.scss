@@ -8,37 +8,115 @@
 
 // }
 
+.modal {
+
+}
+
+.modal-size {
+    display: none;
+    align-items: center;
+    justify-content: center; 
+}
+
+.modal-overlay {
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 .modal-size__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 320px;
+    margin: 0 auto;
     box-sizing: border-box;
-    background-color: #fff;
     padding-top: 35px;
     padding-bottom: 50px;
     padding-right: 30px;
     padding-left: 30px;
+    border: $grey-border;
+
+    background-color: #fff;
+    box-shadow: 4px 0 8px -9px rgba(0, 0, 0, 1);
+
+    @media (min-width: $tablet-width) {
+        width: 570px;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
 }
 
 .modal-size__title {
-    margin: 0;
     padding: 0;
+    margin: 0;
     margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+        font-size: 30px;
+        line-height: 57px;
+    }
 }
 
 .modal-size__text {
     margin: 0;
+    margin-bottom: 30px;
     padding: 0;
     color: $text-color;
 }
 
 .modal-size__list {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
     margin: 0;
     padding: 0;
     margin-bottom: 30px;
     list-style: none;
-    display: flex;
+
+    @media (min-width: $tablet-width) {
+        width: 350px;
+    }
+    
 }
 
-.modal-size_
+
+.modal-size__option input[type="radio"] + .modal-size__indicator {
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    border: $grey-border;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    cursor: pointer;
+    user-select: none;
+
+    @media (min-width: $tablet-width) {
+        width: 110px;
+    }
+
+}
+
+.modal-size__option input[type="radio"]:focus + .modal-size__indicator,
+.modal-size__option input[type="radio"]:hover + .modal-size__indicator {
+    border-color: #c7c7c7;
+}
+.modal-size__option input[type="radio"]:checked ~ .modal-size__indicator {
+    border-color: $green-color;
+}
 
 .modal-size__btn {
     box-sizing: border-box;
@@ -60,4 +138,8 @@
             border-color: $dark-green-color;
             color: rgba(255, 255, 255, 0.3);
         } 
+
+    @media (min-width: $tablet-width) {
+        width: 350px;
+    }
 }
