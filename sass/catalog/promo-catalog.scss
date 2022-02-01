@@ -1,0 +1,138 @@
+@import '../variables';
+
+
+.promo-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    
+    background-color: #f1f1f1;
+
+    @media (min-width: $tablet-width) {
+        padding-right: 50px;
+        padding-left: 50px;      
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-right: 100px;
+        padding-left: 100px;      
+    }
+
+    &::before {
+
+        @media (min-width:$tablet-width) {
+            content: "";
+            z-index: 2;
+            position: absolute;
+            top: 322px;
+            left: 0;
+
+            width: 100%;
+            height: 20px;
+            background-image:  url('../img/zigzag.png');  
+        }
+
+        @media (min-width: $desktop-width) {
+            top: 370px;
+        }
+    }
+}
+
+.promo-catalog__title {
+    align-self: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    padding-bottom: 75px;
+
+    font-size: 27px;
+    line-height: 30px;
+
+    @media (min-width: $tablet-width) {
+        order: 2;
+        padding-top: 55px;
+        padding-bottom: 85px;
+        font-size: 43px;
+        line-height: 50px;   
+    }
+
+    @media (min-width: $desktop-width) {
+        font-size: 53px;
+        line-height: 57px;  
+        padding-top: 60px;
+        padding-bottom: 120px;     
+    }
+
+}
+
+.promo-catalog__list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    @media (min-width: $tablet-width) {
+        order: 1;
+        display: flex;
+        width: 668px;
+    }
+
+     @media (min-width: $desktop-width) {
+        width: 1050px;
+    }
+}
+
+.promo-catalog__item--tab-hidden {
+
+     @media (min-width: $desktop-width) {
+        display: none;    
+    }
+}
+
+.promo-catalog__item--hidden {
+
+     @media (min-width: $tablet-width) {
+        display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+       
+    }
+}
+
+.promo-catalog__item--delivery {
+
+    @media (min-width: $tablet-width) {
+        margin-left: auto;
+        padding-top: 25px;
+        line-height: 24px;
+    }
+}
+
+.promo-catalog__link {
+
+    @media (min-width: $tablet-width) {
+    display: block;
+    width: 167px;
+    padding-top: 25px;
+    line-height: 24px;
+    color: $body-color;
+    font-weight: 700;
+
+        &:hover,
+        &:focus {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        &:active {
+            color: rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 183px; 
+    }
+}
