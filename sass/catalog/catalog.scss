@@ -27,9 +27,14 @@
     padding: 0;
     list-style: none;
 
+    @media (min-width: $tablet-width) {
+        align-items: stretch;
+    }
+
      @media (min-width: $desktop-width) {
         flex-direction: row;
         width: 1050px;
+
      }
 }
 
@@ -52,6 +57,16 @@
         margin-right: 50px;
         
      }
+
+        &:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+                        0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+
+        &:active {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2),
+                        0 4px 6px rgba(0,0,0,0.2);
+        }
 }
 
 .catalog__card-item:nth-child(3n) {
@@ -107,10 +122,12 @@
         display: flex;
         flex-direction: column;
         width: 334px;
+        
     }
 
     @media (min-width: $desktop-width) {  
         width: 316px;
+        flex: 1;
     }
 }
 
@@ -145,6 +162,7 @@
 
     @media (min-width: $tablet-width) { 
         margin-bottom: 45px;
+
     }
 }
 
