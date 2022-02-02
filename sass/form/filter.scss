@@ -1,0 +1,306 @@
+@import '../variables';
+
+.filter {
+    padding-top: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 55px;
+
+}
+
+.filter__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.filter__form fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.filter__description {
+    width: 260px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.filter__wrapper {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+
+.filter__title {
+    position: relative;
+    margin-bottom: 25px;
+
+    font-size: 17px;
+    color: $green-color;
+    text-transform: uppercase;
+    font-weight: 700;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 1px;
+            width: 200px;
+            height: 1px;
+            background-color: $green-color;
+
+        }
+}
+
+.filter__title--small {
+    margin-bottom: 15px;
+}
+
+.filter__title--email { 
+
+        &::before {
+            width: 175px;
+        }
+}
+
+.filter__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.filter__list--color {
+    
+
+}
+
+.filter__item {
+    position: relative;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 65px;
+}
+
+.filter__item label,
+.filter__option label {
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.filter__item--type input[type="radio"] ~ label {
+    display:inline-flex;
+    align-items:center;
+    user-select: none;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 0;
+            width: 40px;
+            height: 40px;
+            border: 2px solid $body-color;
+            border-radius: 50%;
+                    }
+} 
+
+.filter__item--type input[type="radio"]:hover ~ label::before,
+.filter__item--type input[type="radio"]:focus ~ label::before {
+     border-color: $green-color;
+     transition: all 0.3s;
+
+}
+
+
+
+.filter__item--type input[type="radio"]:checked ~ label::before {
+    background-image: url('../img/shape.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-color:  #c7c7c7;
+    transition: border-color 0.3s;
+    box-shadow:0 0 5px 0px rgba(199, 199, 199, 0.5);
+}
+
+.filter__item--type input[type="radio"]:disabled ~ label::before {
+    background-image: url('../img/shape.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.5;
+    border-color:  #c7c7c7;
+}
+
+.filter__item--color input[type="checkbox"] ~ label {
+    display:inline-flex;
+    align-items:center;
+    user-select: none;
+
+        &::before {
+        content: "";
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        border: 2px solid $body-color;
+        
+    }
+}
+
+
+.filter__item--color input[type="checkbox"]:hover ~ label::before,
+.filter__item--color input[type="checkbox"]:focus ~ label::before {
+     border-color: $green-color;
+    
+
+}
+
+
+.filter__item--color input[type="checkbox"]:checked ~ label::before {
+    background-image: url('../img/check-mark.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+     border-color:  #c7c7c7;
+    box-shadow:0 0 5px 0px rgba(199, 199, 199, 0.5);
+}
+
+.filter__item--color input[type="checkbox"]:disabled ~ label::before {
+    background-image: url('../img/check-mark.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    opacity: 0.5;
+    
+}
+
+.filter__option {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.filter__option--phone,
+.filter__option--email  {
+
+    &:hover::before {
+        opacity: 0.8;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: -10px;
+        width: 40px;
+        height: 30px;
+        background-image: url('../img/phone.png');
+        background-repeat: no-repeat;
+        transition: all 0.5s;
+
+    }
+}
+
+
+.filter__option--email {
+
+      &:hover::before {
+        opacity: 0.8;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: -5px;
+        width: 40px;
+        height: 30px;
+        background-image: url('../img/mail.png');
+        background-repeat: no-repeat;
+        transition: all 0.5s;
+
+    }
+}
+
+.filter__option:last-child {
+    margin-bottom: 0;
+}
+
+.filter__option input {
+    box-sizing: border-box;
+
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;    
+    border: none;
+    border-bottom: 2px solid $body-color;
+
+    font: inherit;
+    font-size: 17px;
+    outline: none;
+     transition: all 0.5s;
+
+
+        &:hover {
+            border-bottom-color: $green-color;
+        }
+
+        &:focus {
+            border-bottom-color: $dark-green-color;
+        }
+}
+
+.filter__option textarea {
+    box-sizing: border-box;
+
+    width: 260px;
+    min-height: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;    
+    
+    border: 2px solid $body-color;
+
+    font: inherit;
+    font-size: 17px;
+    outline: none;
+     transition: all 0.5s;
+
+
+        &:hover {
+            border-color: $green-color;
+        }
+
+        &:focus {
+            border-color: $dark-green-color;
+        }
+
+}
+
+.filter__sub {
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: $text-color;
+}
+
+.filter__btn {
+    width: 260px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+
