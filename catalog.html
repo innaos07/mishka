@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/catalog.css">
   </head>
   <body>
-     <header class="page-header">
+    <header class="page-header">
         <div class="container page-header__wrapper"> 
             <h1 class="visually-hidden">Сайт с игрушками ручной работы Mishka</h1>
             <div class="page-header__logo">
@@ -64,181 +64,193 @@
         </div>
     </header>
 
-    <main class="container">
+    <main>
         <section class="promo-catalog">
-            <h1 class="promo-catalog__title">Каталог товаров</h2>
-                <ul class="promo-catalog__list">
-                    <li class="promo-catalog__item promo-catalog__item--tab-hidden">
-                        <a class="promo-catalog__link" href="catalog.html">Каталог товаров</a>
-                    </li>
-                    <li class="promo-catalog__item promo-catalog__item--tab-hidden">
-                        <a class="promo-catalog__link" href="form.html">Вязание на заказ</a>
-                    </li>
-                     <li class="promo-catalog__item promo-catalog__item--hidden">
-                        <a class="promo-catalog__link" href="catalog.html">Новые поступления</a>
-                    </li>
-                    <li class="promo-catalog__item promo-catalog__item--hidden">
-                        <a class="promo-catalog__link" href="form.html">Распродажа</a>
-                    </li>
-                    <li class="promo-catalog__item promo-catalog__item--delivery"> Бесплатная доставка по России
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="promo-catalog__wrapper">
+                    <h2 class="promo-catalog__title">Каталог товаров</h2>
+                    <ul class="promo-catalog__list">
+                        <li class="promo-catalog__item promo-catalog__item--tab-hidden">
+                            <a class="promo-catalog__link" href="catalog.html">Каталог товаров</a>
+                        </li>
+                        <li class="promo-catalog__item promo-catalog__item--tab-hidden">
+                            <a class="promo-catalog__link" href="form.html">Вязание на заказ</a>
+                        </li>
+                         <li class="promo-catalog__item promo-catalog__item--hidden">
+                            <a class="promo-catalog__link" href="catalog.html">Новые поступления</a>
+                        </li>
+                        <li class="promo-catalog__item promo-catalog__item--hidden">
+                            <a class="promo-catalog__link" href="form.html">Распродажа</a>
+                        </li>
+                        <li class="promo-catalog__item promo-catalog__item--delivery"> Бесплатная доставка по России
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section class="catalog">
-            <ul class="catalog__list">
+            <div class="container">
+                <div class="catalog__wrapper">
+                    <ul class="catalog__list">
 
-                <li class="catalog__card-item">
-                    <a  class="card__image" href="#">
-                        <picture>
-                            <source media="(min-width:1200px)" srcset="img/product-1-desktop.jpg" width="316" height="442">
-                            <source media="(min-width:768px)" srcset="img/product-1-tablet.jpg" width="334" height="334">
-                            <img src="img/product-1-mobile.jpg" width="260" height="195" alt="">
-                        </picture>
-                    </a>
-
-                    <div class="card__wrapper">
-                        <a class="card__link" href="#">
-                            <h3 class="card__title">Зайчик-попрыгайчик</h3>
-                        </a>
-                        <p class="card_description">Рост 30 см, вес 200 г</p>
-                    
-                        <div class="card__wrapper--bottom">
-                            <span class="card__price">1 200 руб.</span>
-                            <a  class="card--btn btn--backet" href="#">
-                          
-                                <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
-                            
+                        <li class="catalog__card-item">
+                            <a  class="card__image" href="#">
+                                <picture>
+                                    <source media="(min-width:1200px)" srcset="img/product-1-desktop.jpg" width="316" height="442">
+                                    <source media="(min-width:768px)" srcset="img/product-1-tablet.jpg" width="334" height="334">
+                                    <img src="img/product-1-mobile.jpg" width="260" height="195" alt="">
+                                </picture>
                             </a>
-                        </div>
-                    </div>
-                </li>
 
-                <li class="catalog__card-item">
-                    <a  class="card__image" href="#">
-                        <picture>
-                            <source media="(min-width:1200px)" srcset="img/product-2-desktop.jpg" width="316" height="442">
-                            <source media="(min-width:768px)" srcset="img/product-2-tablet.jpg" width="334" height="334">
+                            <div class="card__wrapper">
+                                <a class="card__link" href="#">
+                                    <h3 class="card__title">Зайчик-попрыгайчик</h3>
+                                </a>
+                                <p class="card_description">Рост 30 см, вес 200 г</p>
                             
-                            <img src="img/product-2-mobile.jpg" width="260" height="195" alt="">
-                        </picture>
-                    </a>
+                                <div class="card__wrapper--bottom">
+                                    <span class="card__price">1 200 руб.</span>
+                                    <a  class="card--btn btn--backet" href="#">
+                                  
+                                        <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
 
-                    <div class="card__wrapper">
-                        <a class="card__link" href="#">
-                            <h3 class="card__title">Корзинка для белья</h3>
-                        </a>
-                        <p class="card_description">Диаметр 15 см, высота 10 см</p>
-                    
-                        <div class="card__wrapper--bottom">
-                            <span class="card__price">690 руб.</span>
-                            <a  class="card--btn btn--backet" href="#">
-                          
-                                <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
-                            
+                        <li class="catalog__card-item">
+                            <a  class="card__image" href="#">
+                                <picture>
+                                    <source media="(min-width:1200px)" srcset="img/product-2-desktop.jpg" width="316" height="442">
+                                    <source media="(min-width:768px)" srcset="img/product-2-tablet.jpg" width="334" height="334">
+                                    
+                                    <img src="img/product-2-mobile.jpg" width="260" height="195" alt="">
+                                </picture>
                             </a>
-                        </div>
-                    </div>
-                </li>
 
-                <li class="catalog__card-item">
-                    <a  class="card__image" href="#">
-                        <picture>
-                            <source media="(min-width:1200px)" srcset="img/product-3-desktop.jpg" width="316" height="442">
-                            <source media="(min-width:768px)" srcset="img/product-3-tablet.jpg" width="334" height="334"> 
+                            <div class="card__wrapper">
+                                <a class="card__link" href="#">
+                                    <h3 class="card__title">Корзинка для белья</h3>
+                                </a>
+                                <p class="card_description">Диаметр 15 см, высота 10 см</p>
                             
-                            <img src="img/product-3-mobile.jpg" width="260" height="195" alt="">
-                        </picture>
-                    </a>
+                                <div class="card__wrapper--bottom">
+                                    <span class="card__price">690 руб.</span>
+                                    <a  class="card--btn btn--backet" href="#">
+                                  
+                                        <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
 
-                    <div class="card__wrapper">
-                        <a class="card__link" href="#">
-                            <h3 class="card__title">Большая корзинка </h3>
-                        </a>
-                        <p class="card_description">Диаметр 30 см, высота 30 см</p>
-                    
-                        <div class="card__wrapper--bottom">
-                            <span class="card__price">1 500 руб.</span>
-                            <a  class="card--btn btn--backet" href="#">
-                          
-                                <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
-                            
+                        <li class="catalog__card-item">
+                            <a  class="card__image" href="#">
+                                <picture>
+                                    <source media="(min-width:1200px)" srcset="img/product-3-desktop.jpg" width="316" height="442">
+                                    <source media="(min-width:768px)" srcset="img/product-3-tablet.jpg" width="334" height="334"> 
+                                    
+                                    <img src="img/product-3-mobile.jpg" width="260" height="195" alt="">
+                                </picture>
                             </a>
-                        </div>
-                    </div>
-                </li>
-                
-              <li class="catalog__card-item">
-                    <a  class="card__image" href="#">
-                        <picture>
-                            <source media="(min-width:1200px)" srcset="img/product-1-desktop.jpg" width="316" height="442">
-                            <source media="(min-width:768px)" srcset="img/product-1-tablet.jpg" width="334" height="334">
-                            <img src="img/product-1-mobile.jpg" width="260" height="195" alt="">
-                        </picture>
-                    </a>
 
-                    <div class="card__wrapper">
-                        <a class="card__link" href="#">
-                            <h3 class="card__title">Зайчик-попрыгайчик</h3>
-                        </a>
-                        <p class="card_description">Рост 30 см, вес 200 г</p>
-                    
-                        <div class="card__wrapper--bottom">
-                            <span class="card__price">1 200 руб.</span>
-                            <a  class="card--btn btn--backet" href="#">
-                          
-                                <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
+                            <div class="card__wrapper">
+                                <a class="card__link" href="#">
+                                    <h3 class="card__title">Большая корзинка </h3>
+                                </a>
+                                <p class="card_description">Диаметр 30 см, высота 30 см</p>
                             
+                                <div class="card__wrapper--bottom">
+                                    <span class="card__price">1 500 руб.</span>
+                                    <a  class="card--btn btn--backet" href="#">
+                                  
+                                        <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        
+                      <li class="catalog__card-item">
+                            <a  class="card__image" href="#">
+                                <picture>
+                                    <source media="(min-width:1200px)" srcset="img/product-1-desktop.jpg" width="316" height="442">
+                                    <source media="(min-width:768px)" srcset="img/product-1-tablet.jpg" width="334" height="334">
+                                    <img src="img/product-1-mobile.jpg" width="260" height="195" alt="">
+                                </picture>
                             </a>
-                        </div>
-                    </div>
-                </li>
 
-                <li class="catalog__card-item">
-                    <a  class="card__image" href="#">
-                        <picture>
-                            <source media="(min-width:1200px)" srcset="img/product-3-desktop.jpg" width="316" height="442">
-                            <source media="(min-width:768px)" srcset="img/product-3-tablet.jpg" width="334" height="334"> 
+                            <div class="card__wrapper">
+                                <a class="card__link" href="#">
+                                    <h3 class="card__title">Зайчик-попрыгайчик</h3>
+                                </a>
+                                <p class="card_description">Рост 30 см, вес 200 г</p>
                             
-                            <img src="img/product-3-mobile.jpg" width="260" height="195" alt="">
-                        </picture>
-                    </a>
+                                <div class="card__wrapper--bottom">
+                                    <span class="card__price">1 200 руб.</span>
+                                    <a  class="card--btn btn--backet" href="#">
+                                  
+                                        <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
 
-                    <div class="card__wrapper">
-                        <a class="card__link" href="#">
-                            <h3 class="card__title">Большая корзинка </h3>
-                        </a>
-                        <p class="card_description">Диаметр 30 см, высота 30 см</p>
-                    
-                        <div class="card__wrapper--bottom">
-                            <span class="card__price">1 500 руб.</span>
-                            <a  class="card--btn btn--backet" href="#">
-                          
-                                <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
-                            
+                        <li class="catalog__card-item">
+                            <a  class="card__image" href="#">
+                                <picture>
+                                    <source media="(min-width:1200px)" srcset="img/product-3-desktop.jpg" width="316" height="442">
+                                    <source media="(min-width:768px)" srcset="img/product-3-tablet.jpg" width="334" height="334"> 
+                                    
+                                    <img src="img/product-3-mobile.jpg" width="260" height="195" alt="">
+                                </picture>
                             </a>
-                        </div>
-                    </div>
-                </li>
 
-            </ul>   
+                            <div class="card__wrapper">
+                                <a class="card__link" href="#">
+                                    <h3 class="card__title">Большая корзинка </h3>
+                                </a>
+                                <p class="card_description">Диаметр 30 см, высота 30 см</p>
+                            
+                                <div class="card__wrapper--bottom">
+                                    <span class="card__price">1 500 руб.</span>
+                                    <a  class="card--btn btn--backet" href="#">
+                                  
+                                        <svg height="18" viewBox="0 0 32 32" width="18" style="fill:#dedede;" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="2" id="_2"><path d="M30,13H21.69L18.38,4.3,16.51,5l3,8h-7.1l3-8L13.63,4.3,10.31,13H2v2H3.13L5,28.14A1,1,0,0,0,6,29H26a1,1,0,0,0,1-.86L28.87,15H30ZM25.13,27H6.87L5.15,15h21.7Z" id="basket_empty_shop_buy"/></g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>  
+                </div>
+            </div> 
         </section>
 
         <section class="creation">
-            <h2 class="creation__title">Процесс производства</h2>
+            <div class="container">
+                <div class="creation__wrapper">
+                    <h2 class="creation__title">Процесс производства</h2>
 
-            <div class="creation__wrapper--top">
-                <picture>
-                    <source media="(min-width:1200px)" srcset="img/video-desktop.jpg" width="682" height="445">
-                    <source media="(min-width:768px)" srcset="img/video-tablet.jpg" width="668" height="445"> 
+                    <div class="creation__wrapper--top">
+                        <picture>
+                            <source media="(min-width:1200px)" srcset="img/video-desktop.jpg" width="682" height="445">
+                            <source media="(min-width:768px)" srcset="img/video-tablet.jpg" width="668" height="445"> 
+                            
+                            <img src="img/video-mobile.jpg" width="260" height="150" alt="">
+                        </picture>
+                    </div>
                     
-                    <img src="img/video-mobile.jpg" width="260" height="150" alt="">
-                </picture>
-            </div>
-            
-            <div class="creation__wrapper--bottom">
-                <p class="creation__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-                <a class="btn creation__btn" href="#">СДелать заказ</a>
+                    <div class="creation__wrapper--bottom">
+                        <p class="creation__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                        <a class="btn creation__btn" href="#">СДелать заказ</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

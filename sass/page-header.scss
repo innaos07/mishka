@@ -1,5 +1,13 @@
 @import 'variables';
 
+.page-header {
+
+    @media (min-width: $tablet-width) { 
+        border-bottom: $grey-border;
+    }
+
+}
+
 .page-header__wrapper {
     display: flex;
     flex-direction: column;
@@ -13,7 +21,7 @@
         min-height: 90px;
         padding-right: 50px;
         padding-left: 50px;
-        border-bottom: $grey-border;
+        
     }
 
      @media (min-width: $desktop-width) {

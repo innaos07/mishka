@@ -1,14 +1,17 @@
 @import '../variables';
 
-
 .promo-catalog {
+    background-color: #f1f1f1;
+}
+
+.promo-catalog__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 10%;
     padding-left: 10%;
     
-    background-color: #f1f1f1;
+    
 
     @media (min-width: $tablet-width) {
         padding-right: 50px;

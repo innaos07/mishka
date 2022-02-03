@@ -1,14 +1,17 @@
 @import '../variables';
 
-
 .promo-form {
+    background-color: #f1f1f1;
+}
+
+.promo-form__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-right: 10%;
     padding-left: 10%;
     
-    background-color: #f1f1f1;
+    
 
     @media (min-width: $tablet-width) {
         padding-right: 50px;
@@ -20,24 +23,24 @@
         padding-left: 100px;
     }
 
-    &::before {
+        &::before {
 
-        @media (min-width:$tablet-width) {
-            content: "";
-            z-index: 2;
-            position: absolute;
-            top: 322px;
-            left: 0;
+            @media (min-width:$tablet-width) {
+                content: "";
+                z-index: 2;
+                position: absolute;
+                top: 322px;
+                left: 0;
 
-            width: 100%;
-            height: 20px;
-            background-image:  url('../img/zigzag.png');  
+                width: 100%;
+                height: 20px;
+                background-image:  url('../img/zigzag.png');  
+            }
+
+            @media (min-width: $desktop-width) {
+                top: 370px;
+            }
         }
-
-        @media (min-width: $desktop-width) {
-            top: 370px;
-        }
-    }
 }
 
 .promo-form__title {
