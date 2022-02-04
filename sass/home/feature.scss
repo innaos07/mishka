@@ -1,8 +1,10 @@
 @import '../variables';
 
-.feature {
+.feature__wrapper{
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 30px;
+        
 
     @media (min-width: $tablet-width) {
         padding-top: 55px;
@@ -12,14 +14,14 @@
     }
 
     @media (min-width: $desktop-width) {
-        padding-left: 275px;
-        padding-right: 275px;
+        padding-left: 225px;
+        padding-right: 225px;
         padding-top: 60px;
         padding-bottom: 45px;
     }
 }
 
-.feature__wrapper {
+.feature__list-wrapper {
 
     @media (min-width: $tablet-width) {
         display: flex;
@@ -89,35 +91,35 @@
 }
 
 .feature__item--natural {
-    background-image: url('../img/feature-icon-1.png');
+    background-image: url('../img/icon-feature-flower.svg');
     background-repeat: no-repeat;
     background-position: 8px 0;
 }
 
 .feature__item--money {
-    background-image: url('../img/feature-icon-3.png');
+    background-image: url('../img/icon-feature-money.svg');
     background-repeat: no-repeat;
 }
 
 .feature__item--heart {
-    background-image: url('../img/feature-icon-5.png');
+    background-image: url('../img/icon-feature-heart.svg');
     background-repeat: no-repeat;
     background-position: 6px 0;
 }
 
 .feature__item--clew {
-    background-image: url('../img/feature-icon-2.png');
+    background-image: url('../img/icon-feature-ball.svg');
     background-repeat: no-repeat;
     background-position: 6px 0;
 }
 
 .feature__item--rocket {
-    background-image: url('../img/feature-icon-4.png');
+    background-image: url('../img/icon-feature-rocket.svg');
     background-repeat: no-repeat;
 }
 
 .feature__item--present {
-    background-image: url('../img/feature-icon-6.png');
+    background-image: url('../img/icon-feature-gift.svg');
     background-repeat: no-repeat;
     background-position: 6px 0;
 }

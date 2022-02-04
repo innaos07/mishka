@@ -66,104 +66,129 @@
         </div>
     </header>
 
-    <main class="container">
+    <main>
 
         <section class="promo">
-            <div class="promo__wrapper">
-                <h2 class="visually-hidden">Mishka</h2> 
-                <ul class="promo-nav__list">
-                        <li class="promo-nav__item promo-nav__item--tab-hidden">
-                            <a class="promo-nav__link" href="catalog.html">Каталог товаров</a>
+            <div class="container">
+                <div class="promo__wrapper">
+                    <div class="promo__wrapper-top">
+                        <h2 class="visually-hidden">Mishka</h2> 
+                        <ul class="promo-nav__list">
+                                <li class="promo-nav__item promo-nav__item--tab-hidden">
+                                    <a class="promo-nav__link" href="catalog.html">Каталог товаров</a>
+                                </li>
+                                <li class="promo-nav__item promo-nav__item--tab-hidden">
+                                    <a class="promo-nav__link" href="form.html">Вязание на заказ</a>
+                                </li>
+                                 <li class="promo-nav__item promo-nav__item--hidden">
+                                    <a class="promo-nav__link" href="catalog.html">Новые поступления</a>
+                                </li>
+                                <li class="promo-nav__item promo-nav__item--hidden">
+                                    <a class="promo-nav__link" href="form.html">Распродажа</a>
+                                </li>
+                                <li class="promo-nav__item promo-nav__item--delivery"> Бесплатная доставка по России
+                                </li>
+                        </ul>
+                        <p class="promo__title">Милые штуки ручной работы для дома</p>
+                    </div>
+               
+                    <ul class="promo__list">
+                        <li class="promo__item">
+                            <a class="promo__link promo__link--subject" href="catalog.html">Предметы интерьера</a>
                         </li>
-                        <li class="promo-nav__item promo-nav__item--tab-hidden">
-                            <a class="promo-nav__link" href="form.html">Вязание на заказ</a>
+                        <li class="promo__item">
+                            <a class="promo__link promo__link--toys" href="catalog.html">Детские игрушки</a>
                         </li>
-                         <li class="promo-nav__item promo-nav__item--hidden">
-                            <a class="promo-nav__link" href="catalog.html">Новые поступления</a>
-                        </li>
-                        <li class="promo-nav__item promo-nav__item--hidden">
-                            <a class="promo-nav__link" href="form.html">Распродажа</a>
-                        </li>
-                        <li class="promo-nav__item promo-nav__item--delivery"> Бесплатная доставка по России
-                        </li>
-                </ul>
-                <p class="promo__title">Милые штуки ручной работы для дома</p>
-                
+                    </ul>
+                </div>
             </div>
-                <ul class="promo__list">
-                    <li class="promo__item">
-                        <a class="promo__link promo__link--subject" href="catalog.html">Предметы интерьера</a>
-                    </li>
-                    <li class="promo__item">
-                        <a class="promo__link promo__link--toys" href="catalog.html">Детские игрушки</a>
-                    </li>
-                </ul>
-
         </section>
 
         <article class="popular">
+            <div class="container">
+                <div class="popular__wrapper">
+                    <div class="popular__title-wrapper">
+                        <h2 class="popular__title">Вязаные корзинки</h2>
+                        <span class="popular__sub">ТОВАР НЕДЕЛИ</span>
+                    </div>
 
-            <div class="popular__wrapper--top">
-                <h2 class="popular__title">Вязаные корзинки</h2>
-                <span class="popular__sub">ТОВАР НЕДЕЛИ</span>
-            </div>
+                    <div class="popular__content">
+                    
+                        <div class="popular__content-wrapper popular__content-wrapper--left">
+                            <p class="popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                            <table class="promo__table">
+                                <tr>
+                                    <td class="popular__item popular__item--name">Цвет:</td>
+                                    <td class="popular__item popular__item--value">«Тиффани»/серый</td>
+                                </tr>
+                                <tr>
+                                    <td class="popular__item popular__item--name">Диаметр:</td>
+                                    <td class="popular__item popular__item--value">25 см</td>
+                                </tr>
+                                <tr>
+                                    <td class="popular__item popular__item--name">Высота</td>
+                                    <td class="popular__item popular__item--value">15 см</td>
+                                </tr>
+                            </table>
+                        </div>
 
-            <div class="popular__content-wrapper">
-                <div class="popular__content-wrapper--left">
-                    <p class="popular__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-                    <table class="promo__table">
-                        <tr>
-                            <td class="popular__item popular__item--name">Цвет:</td>
-                            <td class="popular__item popular__item--value">«Тиффани»/серый</td>
-                        </tr>
-                        <tr>
-                            <td class="popular__item popular__item--name">Диаметр:</td>
-                            <td class="popular__item popular__item--value">25 см</td>
-                        </tr>
-                        <tr>
-                            <td class="popular__item popular__item--name">Высота</td>
-                            <td class="popular__item popular__item--value">15 см</td>
-                        </tr>
-                    </table>
+                        <div class="popular__content-wrapper popular__content-wrapper--right">
 
-                    <span class="popular__price">Цена: 990 руб.</span>
-                    <button class="btn popular__btn" type="button">ЗАКАЗАТЬ</button>
-                </div>
-                
-                <div class="popular__content-wrapper--right">
-                    <img class="popular__image" src="img/popular-product.jpg" width="260" height="315" alt="">     
+                            <picture>
+                        
+                                <source media="(min-width:1250px)" srcset="img/popular-product-desktop.jpg" width="525" height="636">
+                                <source media="(min-width:768px)" srcset="img/popular-product-tablet.jpg" width="333" height="404"> 
+                        
+                                <img class="popular__image" src="img/popular-product-mobile.jpg" width="260" height="315" alt="">  
+                            </picture>
+
+                        </div>
+
+                        <div class="popular__content-wrapper popular__content-wrapper--bottom">
+                            <span class="popular__price">Цена: 990 руб.</span>
+                            <button class="btn popular__btn" type="button">ЗАКАЗАТЬ</button>
+                        </div>
+                        
+                    </div>
+                    
                 </div>
             </div>
         </article>
+
+
         
         <section class="feature">
-            <h2 class="visually-hidden">Features</h2>
-            <p class="feature__title">Коротко о нас:</p>
+            <div class="container">
+                <div class="feature__wrapper">
+                    <h2 class="visually-hidden">Features</h2>
+                    <p class="feature__title">Коротко о нас:</p>
 
-            <div class="feature__wrapper">
-                <ul class="feature__list feature__list--wrapper-left">
-                    <li class="feature__item feature__item--natural">
-                        Экологически чистые материалы
-                    </li>
-                     <li class="feature__item feature__item--money">
-                        Скандинавский стиль по российской цене
-                    </li>
-                    <li class="feature__item feature__item--heart">
-                        Увеличивает лайки на фотографиях
-                    </li>
-                </ul>
+                    <div class="feature__list-wrapper">
+                        <ul class="feature__list feature__list--wrapper-left">
+                            <li class="feature__item feature__item--natural">
+                                Экологически чистые материалы
+                            </li>
+                             <li class="feature__item feature__item--money">
+                                Скандинавский стиль по российской цене
+                            </li>
+                            <li class="feature__item feature__item--heart">
+                                Увеличивает лайки на фотографиях
+                            </li>
+                        </ul>
 
-                <ul class="feature__list feature__list--wrapper-right">
-                    <li class="feature__item feature__item--clew">
-                        Связано вручную с любовью и умилением
-                    </li>
-                    <li class="feature__item feature__item--rocket">
-                        Поддержка отечественного производителя
-                    </li>
-                    <li class="feature__item feature__item--present">
-                        Поставляется в подарочной упаковке
-                    </li>
-                </ul>
+                        <ul class="feature__list feature__list--wrapper-right">
+                            <li class="feature__item feature__item--clew">
+                                Связано вручную с любовью и умилением
+                            </li>
+                            <li class="feature__item feature__item--rocket">
+                                Поддержка отечественного производителя
+                            </li>
+                            <li class="feature__item feature__item--present">
+                                Поставляется в подарочной упаковке
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 

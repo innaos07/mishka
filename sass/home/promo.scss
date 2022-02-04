@@ -1,26 +1,19 @@
 @import '../variables';
 
 .promo {
+    background-color: #f9f9f9;
 
     @media (min-width:$tablet-width) {
-        box-sizing: border-box;
-        padding: 0 50px;
-        background-color: #f9f9f9;
-        position: relative;
-
+                position: relative;
     }   
-
-    @media (min-width: $desktop-width) {
-        padding: 0 100px;
-    }
-
+    
         &::before {
 
             @media (min-width:$tablet-width) {
                 content: "";
                 z-index: 2;
                 position: absolute;
-                top: 670px;
+                top: 98.8%;
                 left: 0;
 
                 width: 100%;
@@ -29,33 +22,45 @@
             }
 
             @media (min-width: $desktop-width) {
-                top: 691px;
+               top: 98.8%;
             }
         }
 }
 
 .promo__wrapper  {
-    padding-top: 75px;
-    min-height: 230px;
+    
+    @media (min-width:$tablet-width) { 
+        padding-right: 50px;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+    }
 
+     @media (min-width: $desktop-width) {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
+
+.promo__wrapper-top{
+    min-height: 230px;
+    padding-top: 75px;
     background-image: url('../img/hero-mobile.jpg');
     background-color: #f9f9f9;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -25px;
-    
-    @media (min-width:$tablet-width) { 
-        display: flex;
-        flex-direction: column;
-        padding-top: 0px;
 
+    @media (min-width:$tablet-width) { 
+        min-height: 555px;
+        padding-top: 0px;
         background-image: url('../img/hero.jpg');
         background-repeat: no-repeat;
         background-size: 150%;
         background-position: -168px 10px;
     }
 
-     @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
         background-size: 100%;
         background-position: 0 0;
        
@@ -76,7 +81,7 @@
 
     @media (min-width:$tablet-width) {
         padding-top: 120px;
-        padding-bottom: 240px;
+        padding-bottom: 150px;
         padding-left: 80px;
         padding-right: 80px;
 

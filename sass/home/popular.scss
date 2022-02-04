@@ -1,13 +1,14 @@
 @import '../variables';
 
-.popular {
+.popular__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     padding-top: 30px;
     padding-bottom: 35px;
     padding-left: 10%;
     padding-right: 10%;
-    position: relative;
+    
 
     @media (min-width: $tablet-width) {
         box-sizing: border-box;
@@ -18,10 +19,11 @@
     }
 
     @media (min-width: $desktop-width) {
-        padding: 0 100px;
+        padding-left: 225px;
+        padding-right: 100px;
         padding-top: 70px;
         padding-bottom: 70px;
-        position: relative;
+        
     }
 
     &::before {
@@ -48,7 +50,7 @@
     }
 }
 
-.popular__wrapper--top {
+.popular__title-wrapper {
 
     @media (min-width: $tablet-width) {
         display: flex;
@@ -59,10 +61,13 @@
     }
 
     @media (min-width: $desktop-width) {
+
+        justify-content: flex-start;
+        width: 1050px;
         position: absolute;
         height: 25px;
         top: 130px;
-        left: 100px;
+        left: 33px;
         z-index: 1;
     }
 }
@@ -82,7 +87,6 @@
     }
 
      @media (min-width: $desktop-width) {
-        font-weight: 400; 
         order: 2;
 
         font-size: $title-desk-font-size;
@@ -92,7 +96,7 @@
 
 .popular__sub {
     display: block;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     font-size: $body-font-size + 2px;
     color: #63d1bb;
     font-weight: 700;
@@ -114,11 +118,17 @@
        }
 }
 
-.popular__content-wrapper {
+.popular__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media (min-width: $tablet-width) {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+
         }
 
     @media (min-width: $desktop-width) {
@@ -131,15 +141,15 @@
     flex-direction: column; 
 
     @media (min-width: $tablet-width) {
+        
         width: 290px;
         margin-right: 40px;
         }
 
     @media (min-width: $desktop-width) {
         box-sizing: border-box;
-        width: 460px;
+        width: 310px;
         margin-right: 60px;
-        padding-left: 160px;
     }
 
     
@@ -149,7 +159,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     color: $text-color;
 
     @media (min-width: $tablet-width) {
@@ -168,7 +178,8 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    margin-bottom: 375px;
+    margin-bottom: 30px;
+    // margin-bottom: 375px;
     color: $text-color;
     border-collapse: collapse; 
 
@@ -192,23 +203,29 @@
 
 .popular__content-wrapper--right {
     display: flex;
-    position: relative;
     
+
+    @media (min-width: $tablet-width) {
+
+        width: 334px;
+    }
+
+     @media (min-width: $desktop-width) {
+        width: 525px;
+     }
 }
 
 .popular__image {
-    position: absolute;
-    top: -462px;
-    left: 0;
+    // position: absolute;
+    // top: -462px;
+    // left: 0;
     width: 260px;
     height: 315px;
     margin-bottom: 30px;
     
 
     @media (min-width: $tablet-width) {
-        position: relative;
-        top: auto;
-        left: auto;
+        
         width: 333px;
         height: 404px;
         margin-bottom: 0;
@@ -220,10 +237,20 @@
     }
 }
 
+.popular__content-wrapper--bottom {
+
+    @media (min-width: $tablet-width) {
+
+        width: 290px;
+
+        margin-top: -103px;
+    }
+}
+
 .popular__price {
 
     display: block;
-    align-self: center;
+    
     margin-bottom: 30px;
 
     font-size: $body-font-size + 2px;
@@ -233,7 +260,7 @@
     text-align: center;
 
     @media (min-width: $desktop-width) {
-        margin-bottom: 98px;
+        margin-bottom: 30px;
     }   
 }
 
