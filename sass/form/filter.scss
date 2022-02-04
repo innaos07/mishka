@@ -158,12 +158,17 @@
 .filter__list--color {
 
     @media (min-width: $tablet-width) {
-        flex-direction: row;
-        flex-wrap: wrap; 
+        display: grid;
+        grid-template-columns: 240px 240px;
+        column-gap: 20px;
+        row-gap: 25px;
+        // flex-direction: row;
+        // flex-wrap: wrap; 
     }
 
     @media (min-width: $desktop-width) {
-        width: 825px;
+         width: 825px;
+         grid-template-columns: 260px 260px 260px;
     }
 }
 
@@ -180,6 +185,7 @@
 }
 
 .filter__item {
+
     width: 260px;
     box-sizing: border-box;
     position: relative;
@@ -200,32 +206,19 @@
 
 .filter__item--color {
     @media (min-width: $tablet-width) {
-        width: 230px;
-        margin-right: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-        width: 255px;
-    }        
-}
-
-.filter__item--color:nth-last-child(3n) {
-
-    @media (min-width: $desktop-width) {
-        margin-right: 0;
-    }
-}
-
-.filter__item--color:nth-last-child(1),
-.filter__item--color:nth-last-child(2)  {
-
-    @media (min-width: $tablet-width) {
         margin-bottom: 0;
+        width: 240px;
+        // margin-right: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+         width: 265px;
+    }        
 }
 
 .filter__item label,
 .filter__option label {
+
     font-size: 17px;
     line-height: 24px;
     font-weight: 700;
@@ -249,7 +242,13 @@
             width: 40px;
             height: 40px;
             border: 2px solid $body-color;
-            border-radius: 50%;                   }
+            border-radius: 50%;                   
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+        }
 } 
 
 .filter__item--type input[type="radio"]:hover ~ label::before,
@@ -259,13 +258,26 @@
 }
 
 .filter__item--type input[type="radio"]:checked ~ label::before {
-    background-image: url('../img/shape.png');
-    background-repeat: no-repeat;
-    background-position: 50%;
+    // background-image: url('../img/shape.png');
+
+    // background-repeat: no-repeat;
+    // background-position: 50%;
+
     border-color:  #c7c7c7;
     transition: border-color 0.3s;
     box-shadow:0 0 5px 0px rgba(199, 199, 199, 0.5);
 }
+
+.filter__item--type input[type="radio"]:checked ~ label::after {
+            top: 36%;
+            left: 12px;
+            width: 20px;
+            height: 20px;
+            background-color: $green-color;
+            border-radius: 50%;
+        
+}
+
 
 .filter__item--type input[type="radio"]:disabled ~ label::before {
     background-image: url('../img/shape.png');
