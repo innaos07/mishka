@@ -1,6 +1,23 @@
 @import '../variables';
 
 .reviews {
+   background-image: url('../img/zigzag-grey-mobile.png');
+   background-repeat: repeat-x;
+   background-position: bottom;
+
+   @media (min-width: $tablet-width) {
+      background-image: url('../img/zigzag-grey.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+   }
+
+   @media (min-width: $desktop-width) {
+      background-image: none;
+   }
+}
+
+.reviews__wrapper {
    display: flex;
    flex-direction: column;
    padding-top: 30px;
@@ -32,28 +49,19 @@
   
    }
 
-   &::before {
-      content: "";
-      position: absolute;
-      height: 10px;
-      width: 100%;
-      left: 0;
-      bottom: 0;
-      background-image: url('../img/zigzag-grey-mobile.png');
-      background-repeat: repeat-x;
-     
-        
-         @media (min-width: $tablet-width) {
-            background-image: url('../img/zigzag-grey.png');
-            height: 23px;
+      &::before {
+
+          @media (min-width: $desktop-width) {
+               content: "";
+               position: absolute;
+               height: 23px;
+               width: 1050px;
+               left: 100px;
+               bottom: 0;
+               background-image: url('../img/zigzag-grey.png');
+               background-repeat: repeat-x;
          }
-        
-        @media (min-width: $desktop-width) {
-            width: 1050px;
-            left: 100px;
-            height: 23px; 
-        }
-   }
+      }
 }
 
 .revievs__title {

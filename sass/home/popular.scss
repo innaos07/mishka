@@ -1,5 +1,23 @@
 @import '../variables';
 
+.popular {
+    background-image: url('../img/zigzag-grey-mobile.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+
+   @media (min-width: $tablet-width) {
+      background-image: url('../img/zigzag-grey.png');
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+   }
+
+   @media (min-width: $desktop-width) {
+      background-image: none;
+   }
+
+}
+
 .popular__wrapper {
     position: relative;
     display: flex;
@@ -19,35 +37,27 @@
     }
 
     @media (min-width: $desktop-width) {
-        padding-left: 225px;
+        padding-left: 275px;
         padding-right: 100px;
         padding-top: 70px;
         padding-bottom: 70px;
         
     }
 
-    &::before {
-        content: "";
-        position: absolute;
-        height: 10px;
-        width: 100%;
-        left: 0;
-        bottom: 0;
-        background-image: url('../img/zigzag-grey-mobile.png');
-        background-repeat: repeat-x;
-        
-        
-        @media (min-width: $tablet-width) {
-            background-image: url('../img/zigzag-grey.png');
-            height: 23px;
-        }
-        
-        @media (min-width: $desktop-width) {
-            width: 1050px;
-            left: 100px;
-            height: 23px; 
-        }
-    }
+
+      &::before {
+
+          @media (min-width: $desktop-width) {
+               content: "";
+               position: absolute;
+               height: 23px;
+               width: 1050px;
+               left: 100px;
+               bottom: 0;
+               background-image: url('../img/zigzag-grey.png');
+               background-repeat: repeat-x;
+         }
+      }
 }
 
 .popular__title-wrapper {
@@ -67,7 +77,7 @@
         position: absolute;
         height: 25px;
         top: 130px;
-        left: 33px;
+        left: 63px;
         z-index: 1;
     }
 }
@@ -124,15 +134,16 @@
     align-items: center;
 
     @media (min-width: $tablet-width) {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 290px 334px;
+        column-gap: 40px;
         align-items: stretch;
 
         }
 
     @media (min-width: $desktop-width) {
-        
+        grid-template-columns: 300px 525px;
+        column-gap: 60px;  
     }
 }
 
@@ -141,18 +152,13 @@
     flex-direction: column; 
 
     @media (min-width: $tablet-width) {
-        
         width: 290px;
-        margin-right: 40px;
-        }
+    }
 
     @media (min-width: $desktop-width) {
         box-sizing: border-box;
         width: 310px;
-        margin-right: 60px;
     }
-
-    
 }
 
 .popular__description {
@@ -169,9 +175,7 @@
     @media (min-width: $desktop-width) {
         padding-top: 165px; 
         margin-bottom: 60px;
-  
     }
-
 }
 
 .promo__table {
@@ -179,13 +183,19 @@
     margin: 0;
     padding: 0;
     margin-bottom: 30px;
-    // margin-bottom: 375px;
+   
     color: $text-color;
     border-collapse: collapse; 
 
     @media (min-width: $tablet-width) {
-        margin-bottom: 50px;
-        }
+        margin-bottom: 85px;
+        width: 290px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 136px;
+
+    }
 }
 
 .popular__item {
@@ -206,7 +216,10 @@
     
 
     @media (min-width: $tablet-width) {
-
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-row-end: 3;
         width: 334px;
     }
 
@@ -216,9 +229,6 @@
 }
 
 .popular__image {
-    // position: absolute;
-    // top: -462px;
-    // left: 0;
     width: 260px;
     height: 315px;
     margin-bottom: 30px;
@@ -237,20 +247,15 @@
     }
 }
 
-.popular__content-wrapper--bottom {
+// .popular__content-wrapper--bottom {
 
-    @media (min-width: $tablet-width) {
+//     @media (min-width: $tablet-width) {
 
-        width: 290px;
-
-        margin-top: -103px;
-    }
-}
+//     }
+// }
 
 .popular__price {
-
     display: block;
-    
     margin-bottom: 30px;
 
     font-size: $body-font-size + 2px;
@@ -269,7 +274,6 @@
     width: 260px;
     padding-left: 84px;
     padding-right: 84px;
-
 
     @media (min-width: $tablet-width) {
         width: 290px;

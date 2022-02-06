@@ -239,7 +239,7 @@
         &::before {
             content: "";
             position: absolute;
-            top: 10%;
+            top: 0;
             left: 0;
             width: 40px;
             height: 40px;
@@ -271,7 +271,7 @@
 }
 
 .filter__item--type input[type="radio"]:checked ~ label::after {
-            top: 36%;
+            top: 13px;
             left: 12px;
             width: 20px;
             height: 20px;
@@ -312,7 +312,7 @@
 
 
 .filter__item--color input[type="checkbox"]:checked ~ label::before {
-    background-image: url('../img/check-mark.png');
+    background-image: url('../img/icon-tick.svg');
     background-repeat: no-repeat;
     background-position: 50%;
     border-color:  #c7c7c7;
