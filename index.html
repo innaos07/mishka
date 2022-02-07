@@ -26,10 +26,10 @@
             </div>
 
             <div class="main-nav__toggle">
-                <span class="main-nav__icon"></span>
+                <span class="main-nav__icon main-nav__icon--open"></span>
             </div>
 
-            <nav class="main-nav main-nav--right">
+            <nav class="main-nav main-nav--open  main-nav--right">
                 <ul class="main-nav__list site-list site-list--hidden">
                     <li class="site-list__item site-list__item--desktop">
                         <a class="site-list__link" href="catalog.html">Каталог товаров</a>
@@ -40,7 +40,7 @@
                 </ul>
             </nav>
 
-            <nav class="main-nav main-nav--left">
+            <nav class="main-nav  main-nav--open main-nav--left">
                 <ul class="main-nav__list user-list">
                     <li class="user-list__item user-list__item--search">
                         <a  class="user-list__link user-list__link--search" href="#">Поиск по сайту
@@ -315,24 +315,12 @@
             </div>
         
     </section>
+    
+    <script src="js/main-nav.js"></script>
 
-    <script> 
-           let mainNavToggle = document.querySelector('.main-nav__icon');
-           let mainNav = document.querySelector('.main-nav');
-           
-
-
-           mainNavToggle.addEventListener('click', function (evt) {
-               evt.preventDefault();
-               console.log('click') 
-               mainNav.classList.toggle('main-nav--open');
-               
-           });
-
-    </script>
+ 
   </body>
-
-
+</html>
 
 
 
