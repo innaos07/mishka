@@ -1,5 +1,58 @@
  @import 'variables';
 
+
+.main-nav__toggle  {
+    position: absolute;
+    top: 35px;
+    right: 30px;
+
+    @media (min-width: $tablet-width) {
+        display: none;   
+    }
+}
+
+.main-nav__icon--closed {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $body-color;  
+
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: $body-color; 
+        }
+
+        &::before {
+            transform: translate(0, -5px);
+        }
+
+        &::after {
+            transform: translate(0, 3px);
+        }
+}
+
+ .main-nav__icon--open  {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $body-color;
+    transform: rotate(45deg); 
+
+        &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: $body-color; 
+            transform: rotate(90deg);
+        }
+
+}
+
 .main-nav {
     display: flex;
     flex-direction: column;
@@ -36,57 +89,7 @@
 
 }
 
-.main-nav__toggle {
-    position: absolute;
-    top: 35px;
-    right: 30px;
 
-    @media (min-width: $tablet-width) {
-        display: none;   
-    }
-}
-
-.main-nav__icon--close {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: $body-color;  
-
-        &::after,
-        &::before {
-            content: "";
-            display: block;
-            width: 20px;
-            height: 2px;
-            background-color: $body-color; 
-        }
-
-        &::before {
-            transform: translate(0, -5px);
-        }
-
-        &::after {
-            transform: translate(0, 3px);
-        }
-}
-
-.main-nav__icon--open {
-    display: block;
-    width: 20px;
-    height: 2px;
-    background-color: $body-color;
-    transform: rotate(45deg); 
-
-        &::before {
-            content: "";
-            display: block;
-            width: 20px;
-            height: 2px;
-            background-color: $body-color; 
-            transform: rotate(90deg);
-        }
-
-}
 
 .main-nav__list {
     margin: 0;

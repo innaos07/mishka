@@ -1,5 +1,5 @@
       let mainNavToggle = document.querySelector('.main-nav__icon');
-      let mainNav = document.querySelector('.main-nav');
+      let mainNavs = document.querySelectorAll('.main-nav');
            
       
 
@@ -7,7 +7,11 @@
            mainNavToggle.addEventListener('click', function (evt) {
              evt.preventDefault();
              console.log('click') 
-             mainNav.classList.toggle('main-nav--closed');
+             mainNavs[0].classList.toggle('main-nav--closed');
+             mainNavs[1].classList.toggle('main-nav--closed');
+            mainNavToggle.classList.toggle('main-nav__icon--open')
+            mainNavToggle.classList.toggle('main-nav__icon--closed')
+
              });
 
 
