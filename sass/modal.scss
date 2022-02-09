@@ -6,12 +6,24 @@
 }
 
 .modal-size {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center; 
+
 }
 
+.modal-size--closed {
+    display: none;
+}
+
+.modal-size--open{ 
+    display: flex;
+ }
+
 .modal-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     position: fixed;
     left: 0;
     top: 0;
@@ -22,6 +34,7 @@
 }
 
 .modal-size__wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -36,7 +49,9 @@
     border: $grey-border;
 
     background-color: #fff;
-    box-shadow: 4px 0 8px -9px rgba(0, 0, 0, 1);
+    // box-shadow: 4px 0 8px -9px rgba(0, 0, 0, 1);
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2),
+                        0 4px 6px rgba(0,0,0,0.2);
 
     @media (min-width: $tablet-width) {
         width: 570px;
@@ -84,6 +99,39 @@
     
 }
 
+.modal-size__icon {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+        display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #c7c7c7;
+    transform: rotate(45deg); 
+
+        &::before {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #c7c7c7; 
+            transform: rotate(90deg);
+        }
+
+        &:hover,
+        &:hover::before {
+            background-color: $green-color;
+            transition: all 0.3s;
+        }
+
+        &:active,
+        &:active::before {
+            background-color: $light-green-color;
+            transition: all 0.3s;
+        }
+
+    
+}
 
 .modal-size__option input[type="radio"] + .modal-size__indicator {
     display: inline-block;
@@ -105,9 +153,11 @@
 .modal-size__option input[type="radio"]:focus + .modal-size__indicator,
 .modal-size__option input[type="radio"]:hover + .modal-size__indicator {
     border-color: #c7c7c7;
+    transition: all 0.3s;
 }
 .modal-size__option input[type="radio"]:checked ~ .modal-size__indicator {
     border-color: $green-color;
+    transition: all 0.3s;
 }
 
 .modal-size__btn {

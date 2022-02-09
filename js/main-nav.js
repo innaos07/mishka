@@ -9,8 +9,8 @@
              console.log('click') 
              mainNavs[0].classList.toggle('main-nav--closed');
              mainNavs[1].classList.toggle('main-nav--closed');
-            mainNavToggle.classList.toggle('main-nav__icon--open')
-            mainNavToggle.classList.toggle('main-nav__icon--closed')
+             mainNavToggle.classList.toggle('main-nav__icon--open')
+             mainNavToggle.classList.toggle('main-nav__icon--closed')
 
              });
 

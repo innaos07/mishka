@@ -211,6 +211,10 @@
     }
 }
 
+.site-list__link--current {
+    opacity: 0.6;
+}
+
 .user-list__link--search {
     position: relative;
 
@@ -239,6 +243,8 @@
         top: 41px;
         left: 33px;
     }
+
+
 }
 
 .user-list__link--backet {
@@ -265,3 +271,15 @@
     }
 }
 
+.user-list__icon {
+    
+        &:hover {
+            fill: $green-color;
+            transition: all 0.3s;
+        }
+
+        &:active {
+            fill: $light-green-color;
+            transition: all 0.3s;
+        }
+}

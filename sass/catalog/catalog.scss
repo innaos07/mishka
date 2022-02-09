@@ -131,10 +131,6 @@
     }
 }
 
-.card__link {
-
-}
-
 .card__title {
     margin: 0;
     margin-bottom: 15px;
@@ -195,7 +191,18 @@
     }
 }
 
+.btn--backet {
 
+    &:hover {
+        fill: $green-color;
+        transition: all 0.3s;
+    }
+
+    &:active {
+        fill: $light-green-color;
+        transition: all 0.3s;
+    }
+}
 
 
 

@@ -6,7 +6,7 @@
    background-position: bottom;
 
    @media (min-width: $tablet-width) {
-      background-image: url('../img/zigzag-grey.png');
+      background-image: url('../img/zigzag-grey.svg');
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: 100%;
@@ -58,7 +58,7 @@
                width: 1050px;
                left: 100px;
                bottom: 0;
-               background-image: url('../img/zigzag-grey.png');
+               background-image: url('../img/zigzag-grey.svg');
                background-repeat: repeat-x;
          }
       }
