@@ -98,44 +98,44 @@
 }
 
 .social__btm--inst {
-    background-image: url('../img/insta.png');
+    background-image: url('../img/icon-insta.svg');
     background-repeat: no-repeat;
     background-position: 50%;
 
     &:hover {
-        background-image: url('../img/insta-dark.png');
+        background-image: url('../img/icon-insta--green.svg');
     }
 
     &:active {
-        background-image: url('../img/insta-light.png');
+        opacity: 0.3;
     }
 }
 
 .social__btm--fb {
-    background-image: url('../img/fb.png');
+    background-image: url('../img/icon-fb.svg');
     background-repeat: no-repeat;
     background-position: 50%;
 
     &:hover {
-        background-image: url('../img/fb-dark.png');
+        background-image: url('../img/icon-fb--green.svg');
     }
 
     &:active {
-        background-image: url('../img/fb-light.png');
+        opacity: 0.3;
     }
 }
 
 .social__btm--tw {
-    background-image: url('../img/twitter.png');
+    background-image: url('../img/icon-twitter.svg');
     background-repeat: no-repeat;
     background-position: 50%;
 
     &:hover {
-        background-image: url('../img/twitter-dark.png');
+        background-image: url('../img/icon-twitter--green.svg');
     }
 
     &:active {
-        background-image: url('../img/twitter-light.png');
+        opacity: 0.3;
     }
 }
 
