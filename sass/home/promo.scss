@@ -192,14 +192,18 @@
     &::before {
         content: "";
         position: absolute;
-        top: 20px;
-        right: 30px;
+        top: 10px;
+        right: 35px;
         width: 70px;
         height: 80px;
         
         background-image: url('../img/interior.svg');
         background-position: 50%;
         background-repeat: no-repeat;
+
+        @media (min-width: $tablet-width) {
+            top: 20px;
+        }
     }
 
         &:hover::before {
@@ -214,14 +218,18 @@
     &::before {
         content: "";
         position: absolute;
-        top: 20px;
+        top: 10px;
         right: 30px;
-        width: 70px;
+        width: 80px;
         height: 80px;
         
         background-image: url('../img/toy.svg');
         background-position: 50%;
         background-repeat: no-repeat;
+
+        @media (min-width: $tablet-width) {
+            top: 20px;
+        }
     }
         &:hover::before {
             opacity: 0.6;
