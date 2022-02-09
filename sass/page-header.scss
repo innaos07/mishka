@@ -53,6 +53,17 @@
     }
 }
 
+.page-header__logo a[href] {
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+}
+
 .page-header__logo-image {
     width: 86px;
     height: 35px;
