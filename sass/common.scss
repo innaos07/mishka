@@ -36,7 +36,6 @@ body {
     min-width: 320px;
     margin: 0 auto;
     
-
     @media (min-width: $tablet-width) {
         width: 768px;
     }
@@ -84,17 +83,17 @@ a {
     color: $text-color;
     background-color: #ffffff;
 
-        &:hover,
-        &:focus {
-            background-color: $btn-background-color;
-            color: rgb(255, 255, 255);
-            transition: all 0.5s;
-        }
-        &:active  {
-            background-color: $btn-background-color;
-            color: rgba(255, 255, 255, 0.3);
-            transition: all 0.5s;
-        }
+    &:hover,
+    &:focus {
+        background-color: $btn-background-color;
+        color: rgb(255, 255, 255);
+        transition: all 0.5s;
+    }
+    &:active  {
+        background-color: $btn-background-color;
+        color: rgba(255, 255, 255, 0.3);
+        transition: all 0.5s;
+    }
 }
 
 

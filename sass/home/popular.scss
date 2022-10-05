@@ -15,7 +15,6 @@
    @media (min-width: $desktop-width) {
       background-image: none;
    }
-
 }
 
 .popular__wrapper {
@@ -27,23 +26,19 @@
     padding-left: 10%;
     padding-right: 10%;
     
-
     @media (min-width: $tablet-width) {
         box-sizing: border-box;
         padding-left: 50px;
         padding-right: 50px;
         padding-bottom: 55px;
-
     }
 
     @media (min-width: $desktop-width) {
         padding-left: 275px;
         padding-right: 100px;
         padding-top: 70px;
-        padding-bottom: 70px;
-        
+        padding-bottom: 70px;     
     }
-
 
       &::before {
 
@@ -83,7 +78,6 @@
 }
 
 .popular__title {
-    // width: 100%;
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
@@ -96,7 +90,7 @@
         margin-bottom: 60px;
     }
 
-     @media (min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
         order: 2;
 
         font-size: $title-desk-font-size;
@@ -111,21 +105,21 @@
     color: #63d1bb;
     font-weight: 700;
 
-        @media (min-width: $tablet-width) {
-            box-sizing: border-box;
-            width: 120px;
-            padding-right: 25px;
-            padding-left: 40px;
-            padding-top: 10px;
-            padding-bottom: 0;
+    @media (min-width: $tablet-width) {
+        box-sizing: border-box;
+        width: 120px;
+        padding-right: 25px;
+        padding-left: 40px;
+        padding-top: 10px;
+        padding-bottom: 0;
 
-        }
+    }
 
-        @media (min-width: $desktop-width) {
-            order: 1;
-            padding-right: 0;      
-            margin-right: 60px;
-       }
+    @media (min-width: $desktop-width) {
+        order: 1;
+        padding-right: 0;      
+        margin-right: 60px;
+   }
 }
 
 .popular__content {
@@ -138,8 +132,7 @@
         grid-template-columns: 290px 334px;
         column-gap: 40px;
         align-items: stretch;
-
-        }
+    }
 
     @media (min-width: $desktop-width) {
         grid-template-columns: 300px 525px;
@@ -194,7 +187,6 @@
 
     @media (min-width: $desktop-width) {
         margin-bottom: 136px;
-
     }
 }
 
@@ -214,7 +206,6 @@
 .popular__content-wrapper--right {
     display: flex;
     
-
     @media (min-width: $tablet-width) {
         grid-row-start: 1;
         grid-row-end: 3;
@@ -234,25 +225,17 @@
     margin-bottom: 30px;
     
 
-    @media (min-width: $tablet-width) {
-        
+    @media (min-width: $tablet-width) { 
         width: 333px;
         height: 404px;
         margin-bottom: 0;
-        }
+    }
 
     @media (min-width: $desktop-width) {
         width: 525px;
         height: 636px;
     }
 }
-
-// .popular__content-wrapper--bottom {
-
-//     @media (min-width: $tablet-width) {
-
-//     }
-// }
 
 .popular__price {
     display: block;
@@ -277,6 +260,6 @@
 
     @media (min-width: $tablet-width) {
         width: 290px;
-        }
+    }
 }
 

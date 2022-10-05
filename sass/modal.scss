@@ -1,15 +1,9 @@
 @import 'variables';
 
-
-.modal {
-
-}
-
 .modal-size {
     display: flex;
     align-items: center;
     justify-content: center; 
-
 }
 
 .modal-size--closed {
@@ -47,11 +41,9 @@
     padding-right: 30px;
     padding-left: 30px;
     border: $grey-border;
-
     background-color: #fff;
-    // box-shadow: 4px 0 8px -9px rgba(0, 0, 0, 1);
-   box-shadow: 0 2px 5px rgba(0,0,0,0.2),
-                        0 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2),
+                0 4px 6px rgba(0,0,0,0.2);
 
     @media (min-width: $tablet-width) {
         width: 570px;
@@ -96,41 +88,38 @@
     @media (min-width: $tablet-width) {
         width: 350px;
     }
-    
 }
 
 .modal-size__icon {
     position: absolute;
     top: 25px;
     right: 15px;
-        display: block;
+    display: block;
     width: 20px;
     height: 2px;
     background-color: #c7c7c7;
     transform: rotate(45deg); 
 
-        &::before {
-            content: "";
-            display: block;
-            width: 20px;
-            height: 2px;
-            background-color: #c7c7c7; 
-            transform: rotate(90deg);
-        }
+    &::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #c7c7c7; 
+        transform: rotate(90deg);
+    }
 
-        &:hover,
-        &:hover::before {
-            background-color: $green-color;
-            transition: all 0.3s;
-        }
+    &:hover,
+    &:hover::before {
+        background-color: $green-color;
+        transition: all 0.3s;
+    }
 
-        &:active,
-        &:active::before {
-            background-color: $light-green-color;
-            transition: all 0.3s;
-        }
-
-    
+    &:active,
+    &:active::before {
+        background-color: $light-green-color;
+        transition: all 0.3s;
+    }   
 }
 
 .modal-size__option input[type="radio"] + .modal-size__indicator {
@@ -147,7 +136,6 @@
     @media (min-width: $tablet-width) {
         width: 110px;
     }
-
 }
 
 .modal-size__option input[type="radio"]:focus + .modal-size__indicator,
@@ -169,17 +157,17 @@
     border-color: $green-color;
     color: #fff;
 
-        &:hover,
-        &:focus {
-            background-color: $dark-green-color; 
-            border-color: $dark-green-color;
-        } 
+    &:hover,
+    &:focus {
+        background-color: $dark-green-color; 
+        border-color: $dark-green-color;
+    } 
 
-        &:active {
-            background-color: $dark-green-color; 
-            border-color: $dark-green-color;
-            color: rgba(255, 255, 255, 0.3);
-        } 
+    &:active {
+        background-color: $dark-green-color; 
+        border-color: $dark-green-color;
+        color: rgba(255, 255, 255, 0.3);
+    } 
 
     @media (min-width: $tablet-width) {
         width: 350px;
